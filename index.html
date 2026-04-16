@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Brahka Labs | Done-for-You AI Automation</title>
-<meta name="description" content="Brahka Labs builds custom AI automation tools for businesses buried in paperwork. Medical practices, pharma, legal, insurance, financial services — deployed in one week, flat fee.">
+<title>Brahka Labs | Done-for-You AI Automation for Law Firms & Businesses</title>
+<meta name="description" content="Brahka Labs builds custom AI automation tools for law firms, medical practices, and businesses buried in paperwork. International real estate, immigration, cross-border compliance — deployed in one week, flat fee.">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <style>
@@ -23,7 +23,6 @@ body{background:var(--bg);color:var(--text-primary);font-family:'Manrope',sans-s
 .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
 img{max-width:100%}
 
-/* NAV */
 nav{position:fixed;top:0;width:100%;z-index:50;background:rgba(205,212,220,0.75);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 .nav-inner{max-width:1140px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:.85rem 2rem}
 .nav-brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
@@ -32,7 +31,6 @@ nav{position:fixed;top:0;width:100%;z-index:50;background:rgba(205,212,220,0.75)
 .nav-cta{background:var(--gradient);color:#fff;padding:.6rem 1.5rem;border-radius:.5rem;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.82rem;text-decoration:none;letter-spacing:.03em;transition:all .3s;border:none;cursor:pointer;box-shadow:0 2px 12px rgba(0,201,221,0.3)}
 .nav-cta:hover{box-shadow:0 4px 24px rgba(0,201,221,0.45);transform:translateY(-1px)}
 
-/* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding:6rem 2rem 3rem;position:relative;overflow:hidden;background:var(--bg-hero)}
 .hero-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
 .hero-left{position:relative;z-index:2}
@@ -41,14 +39,13 @@ nav{position:fixed;top:0;width:100%;z-index:50;background:rgba(205,212,220,0.75)
 .hero-brand-text{font-family:'Outfit',sans-serif;font-weight:800;font-size:2.2rem;color:var(--navy);letter-spacing:.01em;line-height:1}
 .hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;color:var(--navy);margin-bottom:1.25rem}
 .hero h1 .gradient{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero p{font-size:1.05rem;color:var(--text-muted);max-width:460px;line-height:1.75;margin-bottom:2rem}
+.hero p{font-size:1.05rem;color:var(--text-muted);max-width:480px;line-height:1.75;margin-bottom:2rem}
 .btn-primary{display:inline-block;background:var(--gradient);color:#fff;padding:.9rem 2.2rem;border-radius:.5rem;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;letter-spacing:.02em;transition:all .3s;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(0,201,221,0.3)}
 .btn-primary:hover{box-shadow:0 6px 32px rgba(0,201,221,0.45);transform:translateY(-2px)}
 .btn-secondary{display:inline-block;background:transparent;color:var(--navy);padding:.9rem 2.2rem;border-radius:.5rem;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;letter-spacing:.02em;transition:all .3s;border:2px solid rgba(10,22,40,0.15);cursor:pointer}
 .btn-secondary:hover{border-color:rgba(0,201,221,0.4);background:rgba(0,201,221,0.04)}
 .hero-buttons{display:flex;gap:1rem;flex-wrap:wrap}
 
-/* Hero Right - Image + overlay */
 .hero-right{position:relative;border-radius:1.25rem;overflow:hidden;box-shadow:var(--shadow-lg);min-height:460px}
 .hero-img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,201,221,0.08),rgba(124,92,255,0.06));mix-blend-mode:multiply}
@@ -61,33 +58,30 @@ nav{position:fixed;top:0;width:100%;z-index:50;background:rgba(205,212,220,0.75)
 .fc-3{bottom:40%;right:5%;animation:cardFloat 5.5s ease-in-out infinite .5s}
 @keyframes cardFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 
-/* FULL WIDTH IMAGE BREAK */
 .image-break{width:100%;height:360px;position:relative;overflow:hidden}
 .image-break img{width:100%;height:100%;object-fit:cover}
 .image-break-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,var(--bg) 0%,transparent 15%,transparent 85%,var(--bg-alt) 100%)}
 .image-break-alt .image-break-overlay{background:linear-gradient(to bottom,var(--bg-alt) 0%,transparent 15%,transparent 85%,var(--bg) 100%)}
 
-/* SECTIONS */
 section{padding:5.5rem 2rem}
 .section-inner{max-width:1060px;margin:0 auto}
 .section-label{font-family:'Space Grotesk',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.75rem}
 .section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:var(--navy);letter-spacing:-.03em;margin-bottom:.75rem;line-height:1.15}
-.section-desc{font-size:1.05rem;color:var(--text-muted);max-width:560px;margin-bottom:3rem;line-height:1.75}
+.section-desc{font-size:1.05rem;color:var(--text-muted);max-width:620px;margin-bottom:3rem;line-height:1.75}
 .alt-bg{background:var(--bg-alt)}
 
-/* STATS */
+
 .problem-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-top:2rem}
 .stat-card{background:var(--card-bg);border:1px solid var(--border);border-radius:1rem;padding:2rem;box-shadow:var(--shadow);transition:all .3s}
 .stat-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
 .stat-number{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
 .stat-label{font-size:.9rem;color:var(--text-muted);margin-top:.6rem;line-height:1.5}
 
-/* VERTICALS */
 .verticals{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}
 .vertical-tag{padding:.45rem 1.15rem;border-radius:.4rem;border:1px solid var(--border);background:var(--card-bg);font-family:'Space Grotesk',sans-serif;font-size:.82rem;font-weight:500;color:var(--text-primary);transition:all .3s;box-shadow:var(--shadow)}
+.vertical-tag.featured{border-color:rgba(0,201,221,0.4);background:linear-gradient(135deg,rgba(0,201,221,0.08),rgba(124,92,255,0.06));font-weight:600}
 .vertical-tag:hover{border-color:rgba(0,201,221,0.4);background:rgba(0,201,221,0.06)}
 
-/* SERVICES */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.25rem}
 .service-card{background:var(--card-bg);border:1px solid var(--border);border-radius:1rem;padding:2.25rem;transition:all .4s;box-shadow:var(--shadow);position:relative;overflow:hidden}
 .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient);opacity:0;transition:opacity .4s}
@@ -98,20 +92,17 @@ section{padding:5.5rem 2rem}
 .service-card h3{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:600;color:var(--navy);margin-bottom:.6rem}
 .service-card p{font-size:.88rem;color:var(--text-muted);line-height:1.65}
 
-/* STEPS */
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2rem}
 .step{padding:1.75rem;background:var(--card-bg);border:1px solid var(--border);border-radius:1rem;box-shadow:var(--shadow)}
 .step-number{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;opacity:.35;line-height:1;margin-bottom:.75rem}
 .step h3{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
 .step p{font-size:.88rem;color:var(--text-muted);line-height:1.6}
 
-/* CTA */
 .cta-section{text-align:center;position:relative;overflow:hidden}
 .cta-section::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:400px;background:radial-gradient(circle,rgba(0,201,221,0.05),transparent 65%);pointer-events:none}
 .cta-section .section-inner{position:relative;z-index:1}
 .cta-section .section-desc{margin-left:auto;margin-right:auto}
 
-/* ABOUT */
 .about-row{display:flex;gap:2.5rem;align-items:center;flex-wrap:wrap}
 .about-photo{width:150px;height:150px;border-radius:50%;overflow:hidden;flex-shrink:0;box-shadow:var(--shadow-lg);border:3px solid rgba(0,201,221,0.15)}
 .about-photo img{width:100%;height:100%;object-fit:cover}
@@ -124,7 +115,6 @@ section{padding:5.5rem 2rem}
 .about-contact .material-symbols-outlined{font-size:18px}
 .contact-gradient{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 
-/* FOOTER */
 footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--bg-alt)}
 .footer-inner{max-width:1060px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-brand{display:flex;align-items:center;gap:.5rem}
@@ -223,7 +213,7 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--b
     <div class="problem-stats">
       <div class="stat-card">
         <div class="stat-number">16 hrs</div>
-        <div class="stat-label">Per week the average practice spends on documentation and billing tasks that AI can handle</div>
+        <div class="stat-label">Per week the average business spends on documentation and billing tasks that AI can handle</div>
       </div>
       <div class="stat-card">
         <div class="stat-number">$68K</div>
@@ -237,33 +227,34 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--b
   </div>
 </section>
 
-<!-- Image break: office/tech -->
-<div class="image-break">
+<div class="image-break image-break-alt">
   <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400&q=80" alt="Modern workspace">
   <div class="image-break-overlay"></div>
 </div>
 
-<section>
+<section class="alt-bg">
   <div class="section-inner">
     <span class="section-label">Industries We Serve</span>
     <h2 class="section-title">AI Automation Across Verticals</h2>
     <p class="section-desc">We work with businesses that run on complex documentation, compliance, and client communication — wherever the paperwork piles up.</p>
     <div class="verticals">
-      <span class="vertical-tag">Medical Practices</span>
-      <span class="vertical-tag">Pharmaceutical</span>
-      <span class="vertical-tag">Chiropractic &amp; PT</span>
-      <span class="vertical-tag">Dental &amp; Optometry</span>
-      <span class="vertical-tag">Legal &amp; Law Firms</span>
-      <span class="vertical-tag">Insurance Agencies</span>
-      <span class="vertical-tag">Financial Services</span>
-      <span class="vertical-tag">CPA &amp; Accounting</span>
-      <span class="vertical-tag">Real Estate</span>
-      <span class="vertical-tag">Staffing &amp; HR</span>
+      <span class="vertical-tag">⚖️ Law Firms &amp; Attorneys</span>
+      <span class="vertical-tag">🌎 International Real Estate</span>
+      <span class="vertical-tag">🛂 Immigration &amp; Relocation</span>
+      <span class="vertical-tag">🩺 Medical Practices</span>
+      <span class="vertical-tag">💊 Pharmaceutical</span>
+      <span class="vertical-tag">🦴 Chiropractic &amp; PT</span>
+      <span class="vertical-tag">🦷 Dental &amp; Optometry</span>
+      <span class="vertical-tag">🛡️ Insurance Agencies</span>
+      <span class="vertical-tag">💼 Financial Services</span>
+      <span class="vertical-tag">📊 CPA &amp; Accounting</span>
+      <span class="vertical-tag">🏡 Real Estate</span>
+      <span class="vertical-tag">👥 Staffing &amp; HR</span>
     </div>
   </div>
 </section>
 
-<section class="alt-bg" id="services">
+<section id="services">
   <div class="section-inner">
     <span class="section-label">What We Build</span>
     <h2 class="section-title">AI Tools That Work While You Sleep</h2>
@@ -275,9 +266,9 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--b
         <p>AI pre-fills forms, extracts data from documents, and routes paperwork — turning hours of manual work into minutes.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><span class="material-symbols-outlined">receipt_long</span></div>
-        <h3>Billing &amp; Revenue Tools</h3>
-        <p>Automated billing summaries, error detection, underpayment alerts, and plain-language client explanations.</p>
+        <div class="service-icon"><span class="material-symbols-outlined">translate</span></div>
+        <h3>Bilingual Summaries &amp; Routing</h3>
+        <p>Plain-language document summaries in multiple languages. Automated translation routing for certified foreign-language documents.</p>
       </div>
       <div class="service-card">
         <div class="service-icon"><span class="material-symbols-outlined">verified_user</span></div>
@@ -285,9 +276,9 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--b
         <p>Automated eligibility checks, credential verification, and compliance monitoring — triggered at the right moment.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><span class="material-symbols-outlined">send</span></div>
-        <h3>Follow-Up &amp; Tracking</h3>
-        <p>Automated reminders, referral tracking, and follow-up sequences that ensure nothing falls through the cracks.</p>
+        <div class="service-icon"><span class="material-symbols-outlined">receipt_long</span></div>
+        <h3>Billing &amp; Revenue Tools</h3>
+        <p>Automated billing summaries, error detection, underpayment alerts, and plain-language client explanations.</p>
       </div>
       <div class="service-card">
         <div class="service-icon"><span class="material-symbols-outlined">assignment</span></div>
@@ -303,13 +294,12 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--b
   </div>
 </section>
 
-<!-- Image break: data/automation -->
-<div class="image-break image-break-alt">
+<div class="image-break">
   <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1400&q=80" alt="AI and automation">
   <div class="image-break-overlay"></div>
 </div>
 
-<section>
+<section class="alt-bg">
   <div class="section-inner">
     <span class="section-label">The Process</span>
     <h2 class="section-title">From Call to Live in One Week</h2>
@@ -339,7 +329,7 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--b
   </div>
 </section>
 
-<section class="alt-bg" id="about">
+<section id="about">
   <div class="section-inner">
     <span class="section-label">Who We Are</span>
     <h2 class="section-title">Headquartered in the Midwest. Serving Businesses Nationwide.</h2>
@@ -350,7 +340,7 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--b
       <div class="about-text">
         <h3>Jared Leiman — Founder</h3>
         <p>I build custom AI automation tools for businesses that are drowning in documentation and manual workflows. Every tool I deploy is built specifically for your operation — no templates, no generic software. Flat fee, live in one week, running alongside whatever systems you already use.</p>
-        <p>Taking on a limited number of new clients each month to ensure every deployment gets the attention it deserves.</p>
+        <p>Through my document authentication company, American Apostille, I've spent years helping firms and professionals navigate complex paperwork — which is why Brahka Labs knows exactly where the bottlenecks live.</p>
         <div class="about-contact">
           <a href="mailto:jared@brahkalabs.com">
             <span class="material-symbols-outlined contact-gradient">mail</span>
@@ -366,7 +356,7 @@ footer{border-top:1px solid var(--border);padding:2.5rem 2rem;background:var(--b
   </div>
 </section>
 
-<section class="cta-section" id="book">
+<section class="cta-section alt-bg" id="book">
   <div class="section-inner">
     <span class="section-label">Get Started</span>
     <h2 class="section-title">Ready to Get Your Time Back?</h2>
