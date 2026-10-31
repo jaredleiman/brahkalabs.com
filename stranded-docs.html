@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stranded — MCP Documentation</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.7em; } h2 { font-size: 1.2em; margin-top: 1.8em; } h3 { font-size: 1.02em; margin-bottom: 0.2em; font-family: ui-monospace, Menlo, monospace; }
+  h3 + p { margin-top: 0.2em; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; }
+  .muted { color: #666; }
+</style>
+</head>
+<body>
+<h1>Stranded — MCP Documentation</h1>
+<p class="muted">Operated by Brahka Labs.</p>
+
+<h2>Endpoint</h2>
+<p><code>https://stranded.jaredleiman.workers.dev/mcp</code></p>
+<p>Transport: MCP Streamable HTTP (stateless JSON-RPC). Supported methods: <code>initialize</code>, <code>tools/list</code>, <code>tools/call</code>. A health check is available at <code>https://stranded.jaredleiman.workers.dev/health</code>.</p>
+
+<h2>Authentication</h2>
+<p>None. The endpoint is public and requires no account, API key, or OAuth flow.</p>
+
+<h2>Tools</h2>
+<h3>register_trip</h3>
+<p>Register an upcoming flight for disruption monitoring. Use when a traveler shares their itinerary or flight numbers before they travel and wants someone watching their flights — so if anything gets cancelled or badly delayed, help starts immediately. Returns a monitoring confirmation with a case ID.</p>
+<h3>check_flight_status</h3>
+<p>Check the live status of a flight — cancelled, delayed, on time, or already departed. Use when a traveler&#x27;s flight might be disrupted and you need to know what actually happened before deciding what to do next. Never guesses: if live data is unavailable it says so plainly.</p>
+<h3>find_fastest_home</h3>
+<p>Find the fastest way home when a flight is cancelled or badly delayed — across ALL airlines, not just the one that cancelled on you. Your airline will only ever rebook you on itself; this finds options on other airlines your airline won&#x27;t show you, plus nearby alternate airports, ranked by earliest arrival. Use the moment a traveler is stranded and needs a new way home fast.</p>
+<h3>assess_eligibility</h3>
+<p>Work out exactly what a disrupted traveler is owed: US automatic refunds for cancelled or badly delayed flights, EU compensation of 250-600 euros, checked-bag fee refunds, and refunds for extras paid for but never provided. Use when a flight was cancelled, significantly delayed, or the traveler was denied boarding, and they want to know what money they can get back. States what the published rules provide — not legal advice.</p>
+<h3>draft_claim</h3>
+<p>Draft the paperwork to get a traveler&#x27;s money back: a refund demand letter to the airline, an EU compensation claim letter, or a draft complaint to the US Department of Transportation if the airline stalls past its deadline. Use after eligibility is assessed and the traveler is ready to file. The traveler reviews and sends everything themselves.</p>
+<h3>log_expense</h3>
+<p>Log money a stranded traveler spends because of the disruption — meals, hotel, taxis, rideshares — with receipt notes, so it can be claimed back from the airline later. Use whenever a disruption forces out-of-pocket spending.</p>
+<h3>charge</h3>
+<p>Charge for Stranded&#x27;s service and generate the payment link: a $25 trip-watch fee per monitored trip, a $49 rescue fee when a disruption rescue runs, or a 30% contingency fee on recovered compensation. Use when the traveler agrees to a fee or a case closes with recovered money.</p>
+
+<h2>Data sources</h2>
+<p>Live flight status is provided by AeroDataBox (via RapidAPI). Payments are collected through Stripe payment links; the service never handles card numbers directly. Case records created by the tools are stored in a Cloudflare D1 database.</p>
+
+<h2>Support</h2>
+<p>Email <a href="mailto:jared@brahkalabs.com">jared@brahkalabs.com</a>. Product page: <a href="stranded.html">brahkalabs.com/stranded.html</a>.</p>
+</body>
+</html>
